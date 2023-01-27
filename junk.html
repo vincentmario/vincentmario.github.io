@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        .centre {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: BigChungus;
+        }
+        .item2t{
+            grid-area: BigChungusT
+        }
+
+        .item3 {
+            grid-area: Text;
+        }
+
+        .item4 {
+            grid-area: Placeholder2;
+        }
+
+        .item5 {
+            grid-area: Placeholder3;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header'
+                'BigChungus BigChungusT BigChungusT'
+                'Placeholder2 Text Text'
+                'Placeholder3 Text Text';
+            gap: 10px;
+            background-color: black;
+            padding: 10px;
+        }
+
+            .grid-container > div {
+                background-color: white;
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+            }
+
+        body {
+            display: grid;
+            place-items: center;
+            padding: 100px;
+        }
+    </style>
+</head>
+<body style="background: url(background.png); background-size: cover; background-repeat: no-repeat">
+    <div class="grid-container">
+        <div class="item1">Vincent's Epic Website</div>
+        <div class="item2"><a href="junk/Big Chungus the Musical.mp4">Big Chungus the Musical</a></div>
+        <div class="item2t">Video I made lol</div>
+        <div class="item3">2</div>
+        <div class="item4">3</div>
+        <div class="item5">4</div>
+    </div>
+</body>
+</html>
