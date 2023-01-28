@@ -2,6 +2,27 @@
 <html>
 <head>
     <style>
+        .item1 {
+            grid-area: header;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header';
+            gap: 10px;
+            background-color: black;
+            padding: 10px;
+        }
+
+            .grid-container > div {
+                background-color: white;
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+            }
+
+
         body {
             background-image: url('images/cats/dead.jpg');
             background-size: 1000px 1000px;
@@ -9,14 +30,19 @@
     </style>
 </head>
 <body>
-    <img src="images/cats/catdummy.gif" class="centre" />
-    <img src="images/cats/dead.jpg" class="centre" />
-    <img src="images/cats/fuckingkity.jpg" class="centre" />
-    <img src="images/cats/halocat.jpg" class="centre" />
-    <img src="images/cats/lick.gif" class="centre" />
-    <img src="images/cats/lowintelligence.jpg" class="centre" />
-    <img src="images/cats/onmyputer.jpg" class="centre" />
-    <img src="images/cats/tinyapology.jpg" class="centre" />
-    <img src="images/cats/winecat.jpg" class="centre" />
+
+    <div class="grid-container">
+        <div class="item1"><a href="index.html">Vincent's Epic Website</a></div>
+    </div>
+
+        <img src="images/cats/catdummy.gif" class="centre" />
+        <img src="images/cats/dead.jpg" class="centre" />
+        <img src="images/cats/fuckingkity.jpg" class="centre" />
+        <img src="images/cats/halocat.jpg" class="centre" />
+        <img src="images/cats/lick.gif" class="centre" />
+        <img src="images/cats/lowintelligence.jpg" class="centre" />
+        <img src="images/cats/onmyputer.jpg" class="centre" />
+        <img src="images/cats/tinyapology.jpg" class="centre" />
+        <img src="images/cats/winecat.jpg" class="centre" />
 </body>
 </html>
