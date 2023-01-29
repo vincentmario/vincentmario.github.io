@@ -14,11 +14,17 @@
         }
 
         .item2 {
-            grid-area: publicaccess;
+            grid-area: textbooks;
+        }
+        .item2t {
+            grid-area: textbookst;
         }
 
         .item3 {
-            grid-area: junk;
+            grid-area: flashcards;
+        }
+        .item3t {
+            grid-area: flashcardst;
         }
 
         .item4 {
@@ -33,8 +39,8 @@
             display: grid;
             grid-template-areas:
                 'header header header'
-                'publicaccess image image'
-                'junk image image'
+                'textbooks textbookst textbookst'
+                'flashcards flashcardst flashcardst'
                 'coolcatpictures image image';
             gap: 10px;
             background-color: black;
@@ -53,17 +59,18 @@
             place-items: center;
             padding: 100px;
         }
-
     </style>
 </head>
 
 <body style="background: url(background.png); background-size: cover; background-repeat: no-repeat">
     <div class="grid-container">
         <div class="item1"><a href="index.html">Vincent's Epic Website</a></div>
-        <div class="item2"><a href="publicaccess.html">Public Access</a></div>
-        <div class="item3"><a href="junk.html">Junk</a></div>
-        <div class="item4"><a href="CoolCatPictures.html">Cool Cat Pictures</a></div>
-        <div class="item5">Welcome to my kickass website :) vincentmar.io was a bit too expensive for my tastes, but country girls make do. I will either update this every so often or abandon it LMAO.</div>
+        <div class="item2"><a href="https://drive.google.com/drive/folders/13BSajkHdsQwjTbO6Q-D3ElXnRt8luJwt?usp=share_link">Textbooks</a></div>
+        <div class="item2t">Textbooks</div>
+        <div class="item3"><a href="https://drive.google.com/drive/folders/19qfpyLrYkbfFKENAVjZc4Da-RmfbHm-W?usp=share_link">Flashcards</a></div>
+        <div class="item3t">Anki Flashcards</div>
+        <div class="item4">placeholder</div>
+        <div class="item5">placeholder</div>
     </div>
 </body>
 </html>
